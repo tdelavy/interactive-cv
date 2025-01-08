@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CV - Thibaud Delavy</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Hello, I am</h1>
+            <h2>Thibaud Delavy</h2>
+            <p>A passionate Neuroscience Master’s student with expertise in stroke cognition, consulting, and AI. Explore my journey!</p>
+            
+            <!-- Contact Icons in the same location as the previous button -->
+            <div class="btnIcons-icons">
+                <a
+                    href="https://www.linkedin.com/in/thibaud-delavy-0b13571b9"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btnIcons"
+                >
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                
+                <a
+                    href="mailto:thibaud.delavy@bluewin.ch"
+                    class="btnIcons"
+                >
+                    <i class="bx bx-envelope"></i>
+                </a>
+                
+                <a
+                    href="tel:+41798717491"
+                    class="btnIcons"
+                >
+                    <i class="bx bx-phone"></i>
+                </a>
+            </div>
+            <!-- <a href="#timeline" class="btn">My Academic Journey</a>-->
+            <a href="#timeline" class="btn btn-beige">Academic & Work Experience</a>
+        </div>
+        <div class="image">
+            <img src="./Pictures/CV_Image.png" alt="Thibaud Delavy">
+        </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+        <h2 class="section-title">My Academic Journey</h2>
+        <div class="timeline-container">
+            <!-- Step 1 -->
+            <div class="timeline-step" onclick="expandModal('modalHighSchool')">
+                <div class="circle">
+                    <span class="title">High School</span>
+                    <span class="year">2015 - 2018</span>
+                </div>
+            </div>
+        
+            <!-- Modal for High School -->
+            <div id="modalHighSchool" class="modal hidden">
+                <div class="modal-content">
+                    <h2>High School in Philosophy and Psychology</h2>
+                   
+                        <!-- Text Section -->
+                        <div class="text-section">
+                            <p>
+                                <strong>2015 - 2018 </strong><br><br>  
+                                Studied Psychology and Philosophy at Gymnase de Nyon, where I discovered my passion for understanding the brain. This curiosity sparked my desire to explore neuroscience in greater depth.<br><br>
+                                To build a first strong foundation in Neuroscience, I decided to complete two EdX courses: 
+                            </p>
+                            <ul>
+                                <li>
+                                    Fundamentals of Neuroscience from Harvard University
+                                    <!-- Downloadable image link -->
+                                    <a 
+                                    href="./Pictures/Certificat Neurosciences.png" 
+                                    target="_blank"
+                                    class="certificate-link"
+                                  >
+                                    Neuroscience EdX - Certificat
+                                  </a>
+                                  </li>
+                                  <li>
+                                    La Maladie d'Alzheimer from the University La Sorbonne
+                                    <!-- Downloadable image link -->
+                                    <a 
+                                    href="./Pictures/Certificat Alzheimer.png" 
+                                    target="_blank"
+                                    class="certificate-link"
+                                  >
+                                    Alzheimer EdX - Certificat
+                                  </a>
+                                  </li>
+                            </ul>
+                            <p><br>
+                                A final high-school project (Travail de maturité) in Physics was also carried out, culminating in the creation of a documentary that explores the source of stars’ energy.
+                            </p>
+                            <p><br><br>
+                                <a 
+                                href="./Documents/Certificat gymnase.pdf" 
+                                target="_blank"
+                                class="certificate-link"
+                                >
+                                Maturité - Certificate
+                                </a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        
+            <!-- Connector -->
+            <div class="connector"></div>
+        
+            <!-- Step 2 -->
+            <div class="timeline-step" onclick="expandModal('modalBachelor')">
+                <div class="circle">
+                    <span class="title">Bachelor</span>
+                    <span class="year">2019 - 2021</span>
+                </div>
+            </div>
+            <div id="modalBachelor" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Bachelor of Psychological Sciences</h2>
+                        <!-- Text Section -->
+                        <div class="text-section">
+                            <p>
+                                <strong>2019 - 2021 </strong><br><br>
+                                Studied Psychology at the University of Lausanne with a focused on neurosciences through coursework in:
+                            </p>
+                            <ul>
+                                <li>Genetics</li>
+                                <li>Neuroscience</li>
+                                <li>Evolutionary Biology</li>
+                                <li>Statistics I & II</li>
+                                <li>Psychopathology</li>
+                            </ul>
+                            <p>
+                            Combined a solid psychological foundation with hands-on research and analytical training, offering an in-depth perspective on human cognition and behavior.<br><br> Additionally, the objective of the final project of my bachelor was to explore how cochlear implants influence patients both psychologically and physically.
+                            </p>
+                            <p><br><br>
+                                <a 
+                                href="./Documents/Certification du bachelor.pdf" 
+                                target="_blank"
+                                class="certificate-link"
+                                >
+                                Bachelor - Certificate
+                                </a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        
+            <!-- Connector -->
+            <div class="connector"></div>
+        
+            <!-- Step 3 -->
+            <div class="timeline-step" onclick="expandModal('modalExchange')">
+                <div class="circle">
+                    <span class="title">Exchange</span>
+                    <span class="year">2021 - 2022</span>
+                </div>
+            </div>
+        
+            <!-- Modal for Exchange -->
+            <div id="modalExchange" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Exchange Program at the University of Montreal</h2>
+                        <!-- Text Section -->
+                        <div class="text-section">
+                            <p>
+                                <strong>2021 - 2022 </strong><br><br>
+                                After completing all available neuroscience coursework at the University of Lausanne, this exchange provided an opportunity to acquire advanced experience and knowledge. This is why the final stage of my Bachelor’s degree was completed in Canada. I focused on: </p>
+                            <ul>
+                                <li>Pharmacology</li>
+                                <li>Human Neuropsychology</li>
+                                <li>Perception</li>
+                                <li>Stress and Anxiety</li>
+                            </ul>
+                            <p>
+                                This immersive environment broadened my expertise through advanced classes.
+                            </p>
+                            <p><br><br>
+                                <a 
+                                href="./Documents/Notes_Canada.pdf" 
+                                target="_blank"
+                                class="certificate-link"
+                                >
+                                Exchange Certificate
+                                </a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <!-- Connector -->
+            <div class="connector"></div>
+        
+            <!-- Step 4 -->
+            <div class="timeline-step" onclick="expandModal('modalMaster')">
+                <div class="circle">
+                    <span class="title">Master</span>
+                    <span class="year">2023 - Present</span>
+                </div>
+            </div>
+        
+            <!-- Modal for Master -->
+            <div id="modalMaster" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Master in Neurosciences</h2>
+                    <div class="content-row">
+                        <!-- Text Section -->
+                        <div class="text-section">
+                            <p>
+                                <strong>2023 - Present </strong><br><br>
+                                Pursuing a Master’s degree in Neurosciences at the University of Geneva. My coursework and research integrate foundational neurobiological principles, applied methodologies, and cognitive neuroscience to deepen the understanding of brain function and dysfunction. Through practical training, such as hands-on anatomy workshops, I developed a strong grasp of human brain structures and their relationships to cognitive and emotional processes.
+                            </p>    
+                                <ul>
+                                Relevant courses:
+                                <li>Principles of Neurobiology</li>
+                                <li>Applied Statistics for Health Data Analysis</li>
+                                <li>Techniques for Investigating Brain Functions</li>
+                                <li>The Human Brain: From Structure to Function (Practical Workshop on Human Brain Anatomy)</li>
+                                <li>Cognitive and Clinical Neuropsychology</li>
+                                <li>i-Teams Program: Medical Entrepreneurship</li>
+                                </ul>
+                            <p>
+                                Additionally, participation in the i-Teams program sharpened my entrepreneurial mindset, emphasizing the translation of medical research into impactful healthcare solutions.
+                            </p>
+                        </div>
+                        <!-- Image Section -->
+
+                        <div class="image-section">
+                            <p style="font-style: normal;">
+                                I am also conducting a two-year research project at <strong>Campus Biotech</strong> in <a href="http://theattentivebrain.com/" target="_blank" style="text-decoration: none; color: #68affb;">Sani's Lab</a></strong>. My research focuses on understanding how strokes impact behavioral performance, particularly through <strong>egocentric</strong> and <strong>allocentric hemineglect</strong>. Using advanced <strong>functional MRI (fMRI)</strong> techniques, we examine which brain regions are affected by the stroke, allowing us to analyze how these areas contribute to changes in brain activity and structural connectivity.<br><br>
+                            </p>
+                            <img src="./Pictures/Sani's_Lab.jpg" alt="Neuroscience Image" style="width: 100%; max-width: 350px; height: auto; margin: 0 auto; display: block;">
+                            <p style="text-align: center;">Sani's Lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-wrapper">
+            <!-- No text inside the button; only the arrow -->
+            <a href="#work-experience" class="btn arrow-btn">
+              <span class="arrow-caret">^</span>
+            </a>
+          </div>
+    </section>
+
+        <!-- WORK EXPERIENCE TIMELINE -->
+    <section class="timeline" id="work-experience">
+        <h2 class="section-title">My Professional Experience</h2>
+
+        <div class="timeline-container">
+            <!-- Step 1: Internships (3 months) - Memory Center, CHUV -->
+            <div class="timeline-step" onclick="expandModal('modalMemory')">
+                <div class="circle beige-circle">
+                    <span class="title">Internship at CHUV</span>
+                    <span class="year">2022</span>
+                </div>
+            </div>
+
+            <!-- Modal: Memory Center -->
+            <div id="modalMemory" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Internships (3 months) - Memory Center, CHUV</h2>
+                        <div class="text-section">
+                            <p>
+                                From September to November 2022, I interned at <a href="https://www.chuv.ch/fr/memoire/clm-home/recherche" target="_blank" style="text-decoration: none; color: #68affb;">the Leenaards Memory Centre (CLM)</a></strong> within the Clinical Neurosciences Department of the Centre Hospitalier Universitaire Vaudois (CHUV). My primary responsibilities included:
+                            </p>
+                            <ul>
+                                <li>Conducted patient pre-screening for research studies using tools such as Soarian, Ultragenda, Archimede.</li><br>
+                                <li>Managed the CLM biobank via the GPCR-HORUS portal, registering ~400 candidates and obtaining appropriate consents.</li><br>
+                                <li>Identified patients eligible for the Swiss rare diseases registry.</li><br>
+                                <li>Utilized RedCap for the design of research data collection forms and assisted in drafting documents for study amendments and managed laboratory waste.</li><br>
+                            </ul>
+                            <p>
+                            This internship provided practical experience in clinical research coordination and biobank management. I also received a letter of recommendation from them acknowledging my contributions:</p><br>
+                            <p>
+                            <a 
+                            href="./Documents/Lettre de recommendation Chuv.pdf" 
+                            target="_blank"
+                            style="text-decoration: none; color: #68affb;"
+                            class="recommendation-link"
+                          >
+                            Memory Center (CHUV) - Letter of recommendation
+                            </a>
+                            </p>
+                        </div>
+                </div>
+            </div>  
+
+            <!-- Connector -->
+            <div class="connector"></div>
+
+            <!-- Step 3: Research Assistant - University of Lausanne (2022 - 2023) -->
+            <div class="timeline-step" onclick="expandModal('modalAssistant')">
+                <div class="circle beige-circle">
+                    <span class="title">Research Assistant</span>
+                    <span class="year">2022</span>
+                </div>
+            </div>
+
+            <!-- Modal: Research Assistant -->
+            <div id="modalAssistant" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Research Assistant (4 months) - University of Lausanne</h2>
+                        <div class="text-section">
+                            <p>
+                            From August to November 2022, I worked as a Research Assistant at the Institute of Social Sciences of Religions at the University of Lausanne. My key responsibilities included:
+                            </p>
+                            <p>
+                            <ul>
+                                <li>Assisted in managing laboratory experiments.</li><br>
+                                <li>Supervised and conducted psychological measurements.</li><br>
+                                <li>Recruited participants for psychological studies.</li><br>
+                                <li>Utilized tools like MindWare (for cardiovascular signal processing) and Microsoft Office to effectively perform research-related tasks.</li>
+                            </ul>
+                            </p>
+                            <p>
+                            This role allowed me to develop practical skills in experiment coordination, psychological data handling, and participant recruitment. My work was recognized with a letter of recommendation highlighting my contributions and qualities:<br><br>
+                            <a 
+                            href="./Documents/Lettre de recommandation UNIL.pdf" 
+                            target="_blank"
+                            style="text-decoration: none; color: #68affb;"
+                            class="recommendation-link"
+                          >
+                            Research Assistant (UNIL) - Letter of recommendation
+                            </a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Connector -->
+            <div class="connector"></div>
+
+            <!-- Step 4: Junior Consulting - Di Marino Consulting (2023 - 2024) -->
+            <div class="timeline-step" onclick="expandModal('modalConsulting')">
+                <div class="circle beige-circle">
+                    <span class="title">Consulting</span>
+                    <span class="year">2023 - 2024</span>
+                </div>
+            </div>
+
+            <!-- Modal: Consulting -->
+            <div id="modalConsulting" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Junior Consulting Experience - Di Marino Consulting</h2>
+                        <div class="text-section">
+                            <p>
+                                As a Junior Consultant at Di Marino Consulting, I provided strategic advice and innovative solutions to support the company’s manager in overcoming various challenges. My responsibilities included:
+                            </p>
+                            <ul>
+                                <li><strong>Website Optimization: </strong>Offered advice on improving the company’s websites.</li><br>
+                                <li><strong>Generative AI Guidance: </strong>Helped the manager adopt generative AI technologies, providing tailored recommendations to improve efficiency.</li><br>
+                                <li><strong>Administrative Support: </strong>Resolved administrative issues the manager faced, ensuring smoother day-to-day operations.</li><br>
+                                <li><strong>Congress Preparation: </strong>Identified and selected the most relevant speakers for a congress.</li><br>
+                                <li><strong>Problem-Solving:</strong> Delivered tailored, AI-driven solutions to address various challenges encountered by the company.</li>
+                            </ul>
+                            <p>
+                                This experience deepened my understanding of how to apply advanced technologies in a business context.</p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Connector -->
+            <div class="connector"></div>
+
+            <!-- Step 5: Science Communicator - CERN (2023 - Now) -->
+            <div class="timeline-step" onclick="expandModal('modalCERN')">
+                <div class="circle beige-circle">
+                    <span class="title">Science Communicator</span>
+                    <span class="year">2023 - Now</span>
+                </div>
+            </div>
+
+            <!-- Modal: Science Communicator -->
+            <div id="modalCERN" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Guide and Science Communicator at CERN – Portail de la Science</h2>
+                    <div class="content-row">
+                        <div class="text-section">
+                            <p>
+                                As a guide at CERN’s new Portail de la Science, I am responsible for making the complex world of particle physics accessible to the public. My role involves explaining CERN’s mission, groundbreaking research, and the purpose of its facilities in a clear and engaging way. My key responsibilities included:
+                            </p>
+                            <ul>
+                                <li><strong>Simplifying Complex Concepts:</strong> Synthesizing the physics of particles and models into accessible explanations for visitors</li><br>
+                                <li><strong>Explaining Universal Theories:</strong> Providing insights into fundamental questions about the universe, such as the origins of matter and the nature of dark matter and dark energy.</li><br>
+                                <li><strong>Showcasing CERN’s Impact:</strong> Highlighting how CERN’s research contributes to scientific advancements and real-world applications.</li><br>
+                                <li><strong>Engaging Diverse Audiences:</strong> Adapting explanations to suit varied audiences, including students, professionals, and general visitors.</li><br>
+                            </ul>
+                        </div>
+                        <div class="image-section">
+                            <p style="font-style: normal;">
+                                A key part of my role includes presenting and conducting demonstrations with ELISA, one of only two publicly accessible miniature particle accelerators in the world. I explain its operation and showcase its potential applications, such as advancing medical treatments and analyzing archeological artifacts.<br><br><br>
+                            </p>
+                            <img src="./Pictures/Cern.png" alt="CERN Image" style="width: 100%; max-width: 350px; height: auto; margin: 0 auto; display: block;">
+                            <p style="text-align: center;"> ELISA - New Accelerator of Particules</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smooth scrolling for button -->
+    <script>
+        document.querySelectorAll('.btn').forEach(function (button) {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = button.getAttribute('href');
+                // Only scroll if the target is valid
+                if (targetId && document.querySelector(targetId)) {
+                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Expand modal functionality
+        function expandModal(modalId) {
+            // Close any active modals first
+            const activeModal = document.querySelector('.modal.active');
+            if (activeModal) {
+                activeModal.classList.remove('active');
+            }
+
+            // Open the clicked modal
+            const modal = document.getElementById(modalId);
+            modal.classList.add('active');
+        }
+
+        // Close modal when clicking anywhere outside
+        document.addEventListener('click', function (e) {
+            const activeModal = document.querySelector('.modal.active');
+            if (activeModal && !e.target.closest('.modal-content') && !e.target.closest('.circle')) {
+                activeModal.classList.remove('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>

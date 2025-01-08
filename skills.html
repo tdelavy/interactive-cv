@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Thibaud Delavy</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h2 class="section-title">My Skill Set</h2>
+        <p class="section-subtitle">A quick overview of my skills across neuroscience, technology, and project development.</p>
+
+        <div class="skills-grid">
+            <div class="brain-techniques-card">
+                <h3>Languages</h3>
+                <div class="circular-chart">
+                    <!-- Language Circle: French -->
+                    <div class="circle-chart-container">
+                        <div class="circle-chart" style="--percentage: 100;">French</div>
+                        <p class="chart-label">Mother tongue</p>
+                    </div>
+                    <!-- Language Circle: English -->
+                    <div class="circle-chart-container">
+                        <div class="circle-chart" style="--percentage: 90;">English</div>
+                        <p class="chart-label">C1</p>
+                    </div>
+                    <!-- Language Circle: Spanish -->
+                    <div class="circle-chart-container">
+                        <div class="circle-chart" style="--percentage: 75;">Spanish</div>
+                        <p class="chart-label">B2</p>
+                    </div>
+                </div>
+            
+                <h3>Brain Investigation Techniques</h3>
+                <div class="techniques-row">
+                    <!-- fMRI Card -->
+                    <div class="technique-card">
+                        <i class="bx bx-brain icon"></i>
+                        <h4>fMRI</h4>
+                        <ul>
+                            <li>Adapted tasks</li><br>
+                            <li>Performed data analysis with <strong>NiLearn</strong></li>
+                        </ul>
+                    </div>
+            
+                    <!-- TMS Card -->
+                    <div class="technique-card">
+                        <i class="bx bx-target-lock icon"></i>
+                        <h4>TMS</h4>
+                        <ul>
+                            <li>Designed tasks</li><br>
+                            <li>Analyzed brain stimulation techniques</li>
+                        </ul>
+                    </div>
+            
+                    <!-- EEG Card -->
+                    <div class="technique-card">
+                        <i class="bx bx-pulse icon"></i>
+                        <h4>EEG</h4>
+                        <ul>
+                            <li>Processed and analyzed EEG data using <strong>eeglab</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Programming -->
+            <div class="skill-column">
+                <h3>Programming</h3>
+                <ul class="dot-grid">
+                    <li>
+                        <span>Python</span>
+                        <span class="dots">●●●○○</span>
+                    </li>
+                    <li>
+                        <span>Python + Gen.AI</span>
+                        <span class="dots">●●●●○</span>
+                    </li>
+                    <li>
+                        <span>Matlab</span>
+                        <span class="dots">●●○○○</span>
+                    </li>
+                    <li>
+                        <span>Matlab + Gen.AI</span>
+                        <span class="dots">●●●●○</span>
+                    </li>
+                    <li>
+                        <span>R</span>
+                        <span class="dots">●●○○○</span>
+                    </li>
+                </ul><br>
+                <h3>Large Language Models</h3>
+                <p>Experienced in training Gen.AI models (ChatGPT, Gemini) for various projects.<br> <a href="projects.html" style="text-decoration: none; color: #68affb;">See my Projects</a></p>
+            </div>
+
+            <!-- Column 3: Project Development, 3D Printing, LLM -->
+            <div class="skill-column">
+                <h3>Project Development</h3>
+                <ul class="icon-list">
+                    <li><i class="bx bx-check-circle"></i> Business Model</li>
+                    <li><i class="bx bx-cog"></i> Value Proposition</li>
+                    <li><i class="bx bx-cube"></i> Prototype Development</li>
+                </ul><br> <br><br><br>
+
+                <h3>3D Printing</h3>
+                <ul class="icon-list">
+                    <li><i class="bx bx-cube"></i> Tinkercad</li>
+                    <li><i class="bx bx-printer"></i> CURA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const charts = document.querySelectorAll(".circle-chart");
+
+        charts.forEach(chart => {
+            const targetPercentage = parseInt(chart.style.getPropertyValue("--percentage")) || 0;
+            let currentPercentage = 0; // Start at 0%
+
+            const animateChart = () => {
+                if (currentPercentage <= targetPercentage) {
+                    chart.style.background = `conic-gradient(
+                        #06c7c4 ${currentPercentage * 3.6}deg, /* Convert percentage to degrees */
+                        #ccc ${currentPercentage * 3.6}deg
+                    )`;
+                    currentPercentage++;
+                    requestAnimationFrame(animateChart); // Recursively update
+                }
+            };
+
+            animateChart(); // Start the animation
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const dotGrids = document.querySelectorAll(".dot-grid");
+
+        dotGrids.forEach(dotGrid => {
+            dotGrid.querySelectorAll("li").forEach((li, liIndex) => {
+                const dotSpan = li.querySelector(".dots").textContent.trim();
+                const filledCount = dotSpan.split("●").length - 1; // Count filled dots
+
+                const dotsContainer = li.querySelector(".dots");
+                dotsContainer.textContent = ""; // Clear initial content
+
+                for (let i = 0; i < 5; i++) { // Assume max 5 dots
+                    const span = document.createElement("span");
+                    span.textContent = i < filledCount ? "●" : "○"; // Fill or empty
+                    span.classList.add(i < filledCount ? "filled" : "empty");
+                    span.style.opacity = 0;
+
+                    dotsContainer.appendChild(span);
+
+                    // Add delay for staggered animation
+                    setTimeout(() => {
+                        span.style.opacity = 1; // Smooth fade-in
+                    }, i * 300); // Delay for each dot
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
