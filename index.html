@@ -452,6 +452,43 @@
             }
         });
     </script>
+        <!-- Block mobile / tablet devices -->
+    <script>
+    (function(){
+      const isDesktop = !/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|webOS|Windows Phone/i
+                         .test(navigator.userAgent);
+
+      /* Console feedback so you can verify detection */
+      console.log(isDesktop ? 'Desktop detected – site allowed' :
+                              'Mobile device detected – site blocked');
+
+      if(!isDesktop){
+        /* Replace the whole page with a polite desktop‑only notice */
+        document.documentElement.innerHTML = `
+          <style>
+            body{
+              margin:0;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              min-height:100vh;
+              font-family:Arial,Helvetica,sans-serif;
+              background:#111;
+              color:#fff;
+              text-align:center;
+              padding:2rem;
+            }
+            h1{font-size:2rem;margin-bottom:1rem;}
+          </style>
+          <body>
+            <h1>Desktop Only</h1>
+            <p>This interactive CV is optimised for larger screens.<br>
+               Please reopen the link on a computer.</p>
+          </body>
+        `;
+      }
+    })();
+    </script>
     
 </body>
 </html>
