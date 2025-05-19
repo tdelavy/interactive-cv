@@ -16,7 +16,7 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html">AI Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -25,7 +25,7 @@
         <div class="content">
             <h1>Hello, I am</h1>
             <h2>Thibaud Delavy</h2>
-            <p>A passionate Neuroscience Master’s student with expertise in stroke cognition, technology, and AI. Explore my journey!</p>
+            <p>A passionate Neuroscience Master’s student with hands-on experience in neuroimaging and project development. Explore my journey!</p>
             
             <!-- Contact Icons in the same location as the previous button -->
             <div class="btnIcons-icons">
@@ -267,15 +267,15 @@
 
         <div class="timeline-container">
             <!-- Step 1: Internships (3 months) - Memory Center, CHUV -->
-            <div class="timeline-step" onclick="expandModal('modalMemory')">
+            <!--<div class="timeline-step" onclick="expandModal('modalMemory')">
                 <div class="circle beige-circle">
                     <span class="title">Internship at CHUV</span>
                     <span class="year">2022</span>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Modal: Memory Center -->
-            <div id="modalMemory" class="modal hidden">
+            <!-- <div id="modalMemory" class="modal hidden">
                 <div class="modal-content">
                     <h2>Internships (3 months) - Memory Center, CHUV</h2>
                         <div class="text-section">
@@ -302,10 +302,10 @@
                             </p>
                         </div>
                 </div>
-            </div>  
+            </div>  -->
 
             <!-- Connector -->
-            <div class="connector"></div>
+            <!-- <div class="connector"></div> -->
 
             <!-- Step 3: Research Assistant - University of Lausanne (2022 - 2023) -->
             <div class="timeline-step" onclick="expandModal('modalAssistant')">
@@ -381,10 +381,41 @@
             <!-- Connector -->
             <div class="connector"></div>
 
+            <div class="timeline-step" onclick="expandModal('modalMemory')">
+                <div class="circle beige-circle">
+                    <span class="title">Teaching assistant</span>
+                    <span class="year">May 2025</span>
+                </div>
+            </div> 
+
+            <!-- Modal: Memory Center -->
+            <div id="modalMemory" class="modal hidden">
+                <div class="modal-content">
+                    <h2>Mentor – International Neuroscience Program, University of Texas</h2>
+                        <div class="text-section">
+                            <p>
+                                In May 2025, I served as the mentor for a group of undergraduate neuroscience students from the University of Texas, participating in an international academic program hosted in Switzerland as part of the final stage of their bachelor's degree.
+                            </p>
+                            <ul>
+                                <li>Acted as the main point of contact and academic reference for the UT students throughout the month-long program.</li><br>
+                                <li>Coordinated and scheduled neuroscience lectures by PhD students and faculty members from the University of Geneva and Campus Biotech.</li><br>
+                                <li>Ensured continuous communication between the students, their professors, and local institutions.</li><br>
+                                <li>Provided guidance and support on neuroscience topics, coursework, and general academic inquiries.</li><br>
+                            </ul>
+                            <p>
+                                This experience strengthened my skills in academic coordination, cross-cultural communication, and leadership within an international scientific setting.
+                            </p>
+                        </div>
+                </div>
+            </div> 
+
+            <!-- Connector -->
+            <div class="connector"></div>
+
             <!-- Step 5: Science Communicator - CERN (2023 - Now) -->
             <div class="timeline-step" onclick="expandModal('modalCERN')">
                 <div class="circle beige-circle">
-                    <span class="title">Science Communicator</span>
+                    <span class="title">Guide at CERN</span>
                     <span class="year">2023 - Now</span>
                 </div>
             </div>
@@ -452,7 +483,8 @@
             }
         });
     </script>
-        <!-- Block mobile / tablet devices -->
+
+    <!-- Block mobile / tablet devices -->
     <script>
     (function(){
       const isDesktop = !/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|webOS|Windows Phone/i
@@ -489,6 +521,5 @@
       }
     })();
     </script>
-    
 </body>
 </html>
